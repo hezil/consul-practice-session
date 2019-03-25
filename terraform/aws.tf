@@ -1,6 +1,8 @@
 provider "aws" {
   region = "${var.region}"
   version = "~> 1.0"
+  access_key = "${var.aws_access_key}"
+  secret_key = "${var.aws_secret_key}"
 }
 
 resource "aws_security_group" "opsschool_consul" {
