@@ -1,9 +1,14 @@
-variable "aws_access_key" {}
+variable "aws_access_key" {
+default     = ""  
+}
 
-variable "aws_secret_key" {}
+variable "aws_secret_key" {
+default     = ""
+}
 
 variable "region" {
   description = "AWS region for VMs"
+  default     = "us-east-2"
 }
 
 variable "servers" {
@@ -23,6 +28,8 @@ variable "consul_version" {
 
 variable "key_name" {
   description = "name of ssh key to attach to hosts"
+    default     = "hezkeypair"
+  
 }
 
 variable "ami" {
