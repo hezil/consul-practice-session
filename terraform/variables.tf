@@ -36,6 +36,7 @@ variable "ami" {
   description = "ami to use - based on region"
   default = {
     "us-east-1" = "ami-0565af6e282977273"
-    "us-east-2" = "ami-0653e888ec96eab9b"
+#     "us-east-2" = "ami-0653e888ec96eab9b"
+    "us-east-2" = "ami-0450f6efcdce7c116"
   }
 }
